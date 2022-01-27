@@ -27,27 +27,27 @@
                 console.log("Player selected: " + playerHand);
                 console.log("Computer selected: " + computerHand);
 
-                if(playerHand === computerHand){
+                if (playerHand === computerHand) {
                     console.log("It's a draw. Try again!")
                     i--;
                 }
-                else if(!hand.includes(playerHand)){
+                else if (!hand.includes(playerHand)) {
                     console.log("Invalid input. Make sure you spell it correctly");
                     i--;
                 }
-                else if ((playerHand === "Rock" && computerHand === "Scissors") || 
-                    (playerHand === "Paper" && computerHand === "Rock") || 
+                else if ((playerHand === "Rock" && computerHand === "Scissors") ||
+                    (playerHand === "Paper" && computerHand === "Rock") ||
                     (playerHand === "Scissors" && computerHand === "Paper")) {
                     playerWins(i);
                 }
-                else{
+                else {
                     computerWins(i);
                 }
             }
-            if(playerWinCount > computerWinCount) {
+            if (playerWinCount > computerWinCount) {
                 console.log("Player wins with " + playerWinCount + " wins against " + computerWinCount);
             }
-            else{
+            else {
                 console.log("Computer wins with " + computerWinCount + " wins against " + playerWinCount);
             }
         }
@@ -64,12 +64,12 @@
 
         function playerWins(i) {
             playerWinCount++;
-            console.log("Player wins round" + (i + 1));
+            console.log("Player wins round " + (i + 1));
         }
 
         function computerWins(i) {
             computerWinCount++;
-            console.log("Computer wins round" + (i + 1));
+            console.log("Computer wins round " + (i + 1));
         }
     </script>
 </body>
