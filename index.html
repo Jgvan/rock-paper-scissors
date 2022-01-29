@@ -8,26 +8,43 @@
     <title>Rock Paper Scissors</title>
     <script src="rps.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/crystal" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/crystal" type="text/css" />
 </head>
 
 <body>
     <div class="header unselectable">
-        <h1>How about a game of thermonuclear Rock, Paper, Scissors?</h1>
+        <h1>How about a game of thermonuclear Rock Paper Scissors?</h1>
     </div>
 
     <div class="main">
+        <h2 class="start-game">Start new game</h2>
         <h2>Choose your hand!</h2>
+        <!-- toggle between wait-for-start and game-running class to change styles -->
         <div class="player-options unselectable">
-            <button class="button rock">
+            <button class="rock">
                 ✊
             </button>
-            <button class="button paper">
+            <button class="paper">
                 🤚
             </button>
-            <button class="button scissors">
+            <button class="scissors">
                 ✌
             </button>
+        </div>
+        <div class="game unselectable">
+            <div>   
+                <h1>Player</h1>
+                <button class="player">
+                    ✊
+                </button>
+            </div>
+            <p class="vs">VS</p>
+            <div>
+                <h1>AI</h1>
+                <button class="ai">
+                    ✊
+                </button>
+            </div>
         </div>
     </div>
 </body>
