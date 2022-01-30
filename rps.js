@@ -154,4 +154,5 @@ function resetGame() {
 
     aiHand.setAttribute("style", "background: white")
     playerHand.setAttribute("style", "background: white")
+    textResult.textContent = "Fight!";
 }
